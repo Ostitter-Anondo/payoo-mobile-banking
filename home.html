@@ -12,6 +12,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main></main>
+    <main class="flex justify-between items-start">
+      <div class="mockup-phone border-primary mx-auto my-16">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <div class="flex flex-row gap-16 justify-around items-center mt-12">
+              <div class="stats shadow items-center">
+                <img src="assets/payoo.png" alt="" class="w-12 p-1">
+                <div class="stat">
+                  <div class="stat-value text-xl">
+                    $<span id="cashmoney">9400</span>
+                  </div>
+                  <div class="stat-desc">Available Balance</div>
+                </div>
+              </div>
+              <button class="btn btn-outline" id="log-out">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+                  />
+                </svg>
+                Log Out
+              </button>
+            </div>
+            <div class="divider"></div>
+            <div class="flex flex-row gap-16 justify-around items-center">
+              <button class="btn glass">Add Money</button>
+              <button class="btn glass">Cashout</button>
+            </div>
+            <div class="hero bg-white min-h-fit w-10/12 rounded-lg relative"></div>
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input id="cash-amount" type="number" placeholder="How Much Money to Add?" class="input input-bordered rounded-full" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">4 Digit PIN</span>
+                  </label>
+                  <input id="user-pin" type="password" placeholder="Enter 4 Digit PIN" class="input input-bordered rounded-full" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot PIN?</a>
+                  </label>
+                </div>
+                <div id="error"></div>
+                <div class="form-control mt-6">
+                  <button id="addmoney-btn" class="btn bg-[#0874f2] rounded-full text-white">Add Money</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/home.js"></script>
   </body>
 </html>
