@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone border-primary mx-auto my-16">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard bg-gray-200 artboard-demo phone-3 relative">
+            <div class="bg-gradient-to-b from-[#0874f2] via-gray-200 to-gray-200 w-64 h-64 rounded-full flex absolute top-16">
+              <div class="bg-gray-200 w-60 h-60 m-auto rounded-full p-16">
+                <img src="assets/payoo.png" alt="" class="relative bottom-14">
+              </div>
+            </div>
+            <div class="hero bg-white min-h-fit w-10/12 rounded-lg relative">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Mobile Number</span>
+                  </label>
+                  <input id="phone-number" type="number" placeholder="Enter Your Number" class="input input-bordered rounded-full" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">4 Digit PIN</span>
+                  </label>
+                  <input itemid="user-pin" type="password" placeholder="Enter 4 Digit PIN" class="input input-bordered rounded-full" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot PIN?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="login-btn" class="btn bg-[#0874f2] rounded-full text-white">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
