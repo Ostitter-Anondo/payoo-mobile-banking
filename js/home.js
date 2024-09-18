@@ -2,9 +2,9 @@ document.getElementById('addmoney-btn').addEventListener('click', function(event
   event.preventDefault();
   let currentBal = Number(document.getElementById('cashmoney').textContent);
   const userPin = document.getElementById('user-pin').value;
-  const toAdd = Number(document.getElementById('cash-amount').value);
+  const toAddMoney = Number(document.getElementById('cash-amount').value);
   if (userPin === '1474'){
-    currentBal += toAdd;
+    currentBal += toAddMoney;
     document.getElementById('cashmoney').textContent = currentBal;
   }
   else {
