@@ -1,3 +1,6 @@
+document.getElementById('stat-board').addEventListener('click', function(){
+  allHider('actionables', 'trx-hst');
+})
 document.getElementById('add-money').addEventListener('click', function(){
   allHider('actionables', 'add-money-form');
 })
@@ -14,6 +17,7 @@ document.getElementById('addmoney-btn').addEventListener('click', function(event
   if (userPin === '1474'){
     currentBal += toAddMoney;
     document.getElementById('cashmoney').textContent = currentBal;
+    trxMaker('Add', toAddMoney);
   }
   else {
     document.getElementById('error').innerHTML = "<span class='text-red-600'>wrong phone number or pin</span>";
@@ -27,6 +31,7 @@ document.getElementById('rmvmoney-btn').addEventListener('click', function(event
   if (userPin === '1474'){
     currentBal -= toAddMoney;
     document.getElementById('cashmoney').textContent = currentBal;
+    trxMaker('Remov', toAddMoney);
   }
   else {
     document.getElementById('error').innerHTML = "<span class='text-red-600'>wrong phone number or pin</span>";

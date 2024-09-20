@@ -16,9 +16,11 @@
       <div class="mockup-phone border-primary mx-auto my-16">
         <div class="camera"></div>
         <div class="display">
-          <div class="artboard artboard-demo phone-3">
+          <div
+            class="artboard artboard-demo phone-3 justify-start overflow-scroll"
+          >
             <div class="flex flex-row gap-16 justify-around items-center mt-12">
-              <div class="btn stats shadow items-cente h-fit w-52">
+              <div id="stat-board" class="btn stats shadow items-cente h-fit w-52">
                 <img src="assets/payoo.png" alt="" class="w-12 p-1" />
                 <div class="stat p-2">
                   <div class="stat-value text-xl">
@@ -53,8 +55,17 @@
             <div class="divider"></div>
             <div id="actionables" class="w-full">
               <div
+                id="trx-hst"
+                class="flex flex-col bg-white min-h-fit w-10/12 rounded-lg mx-auto my-12 items-center p-6"
+              >
+                <h1 class="font-extrabold text-3xl text-primary my-3">
+                  Transaction History
+                </h1>
+                <div class="divider"></div>
+              </div>
+              <div
                 id="add-money-form"
-                class="hero bg-white min-h-fit w-10/12 rounded-lg relative mx-auto"
+                class="hero bg-white min-h-fit w-10/12 rounded-lg relative hidden mx-auto"
               >
                 <form class="card-body">
                   <div class="form-control">
