@@ -19,7 +19,7 @@
           <div class="artboard artboard-demo phone-3">
             <div class="flex flex-row gap-16 justify-around items-center mt-12">
               <div class="stats shadow items-center">
-                <img src="assets/payoo.png" alt="" class="w-12 p-1">
+                <img src="assets/payoo.png" alt="" class="w-12 p-1" />
                 <div class="stat">
                   <div class="stat-value text-xl">
                     $<span id="cashmoney">9400</span>
@@ -47,31 +47,101 @@
             </div>
             <div class="divider"></div>
             <div class="flex flex-row gap-16 justify-around items-center">
-              <button class="btn glass">Add Money</button>
-              <button class="btn glass">Cashout</button>
+              <button class="btn glass" id="add-money">Add Money</button>
+              <button class="btn glass" id="rmv-money">Cashout</button>
             </div>
-            <div class="hero bg-white min-h-fit w-10/12 rounded-lg relative"></div>
-              <form class="card-body">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">Amount</span>
-                  </label>
-                  <input id="cash-amount" type="number" placeholder="How Much Money to Add?" class="input input-bordered rounded-full" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="label-text">4 Digit PIN</span>
-                  </label>
-                  <input id="user-pin" type="password" placeholder="Enter 4 Digit PIN" class="input input-bordered rounded-full" required />
-                  <label class="label">
-                    <a href="#" class="label-text-alt link link-hover">Forgot PIN?</a>
-                  </label>
-                </div>
-                <div id="error"></div>
-                <div class="form-control mt-6">
-                  <button id="addmoney-btn" class="btn bg-[#0874f2] rounded-full text-white">Add Money</button>
-                </div>
-              </form>
+            <div class="divider"></div>
+            <div class="w-full">
+              <div
+                id="add-money-form"
+                class="hero bg-white min-h-fit w-10/12 rounded-lg relative mx-auto"
+              >
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input
+                      id="cash-amount-add"
+                      type="number"
+                      placeholder="How Much Money to Add?"
+                      class="input input-bordered rounded-full"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit PIN</span>
+                    </label>
+                    <input
+                      id="user-pin-add"
+                      type="password"
+                      placeholder="Enter 4 Digit PIN"
+                      class="input input-bordered rounded-full"
+                      required
+                    />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover"
+                        >Forgot PIN?</a
+                      >
+                    </label>
+                  </div>
+                  <div id="error"></div>
+                  <div class="form-control mt-6">
+                    <button
+                      id="addmoney-btn"
+                      class="btn bg-[#0874f2] rounded-full text-white"
+                    >
+                      Add Money
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div
+                id="rmv-money-form"
+                class="hero bg-white min-h-fit w-10/12 rounded-lg relative hidden mx-auto"
+              >
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input
+                      id="cash-amount-rmv"
+                      type="number"
+                      placeholder="How Much Money to Remove?"
+                      class="input input-bordered rounded-full"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit PIN</span>
+                    </label>
+                    <input
+                      id="user-pin-rmv"
+                      type="password"
+                      placeholder="Enter 4 Digit PIN"
+                      class="input input-bordered rounded-full"
+                      required
+                    />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover"
+                        >Forgot PIN?</a
+                      >
+                    </label>
+                  </div>
+                  <div id="error"></div>
+                  <div class="form-control mt-6">
+                    <button
+                      id="rmvmoney-btn"
+                      class="btn bg-[#0874f2] rounded-full text-white"
+                    >
+                      Add Money
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
