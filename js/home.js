@@ -1,10 +1,8 @@
 document.getElementById('add-money').addEventListener('click', function(){
-  document.getElementById('add-money-form').classList.remove("hidden");
-  document.getElementById('rmv-money-form').classList.add("hidden");
+  allHider('actionables', 'add-money-form');
 })
 document.getElementById('rmv-money').addEventListener('click', function(){
-  document.getElementById('rmv-money-form').classList.remove("hidden");
-  document.getElementById('add-money-form').classList.add("hidden");
+  allHider('actionables', 'rmv-money-form');
 })
 
 
