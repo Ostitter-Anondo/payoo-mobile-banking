@@ -11,8 +11,8 @@ document.getElementById('rmv-money').addEventListener('click', function(){
 document.getElementById('addmoney-btn').addEventListener('click', function(event){
   event.preventDefault();
   let currentBal = Number(document.getElementById('cashmoney').textContent);
-  const userPin = document.getElementById('user-pin-add').value;
-  const toAddMoney = Number(document.getElementById('cash-amount-add').value);
+  const userPin = inputValById('user-pin-add');
+  const toAddMoney = Number(inputValById('cash-amount-add'));
   if (userPin === '1474'){
     currentBal += toAddMoney;
     document.getElementById('cashmoney').textContent = currentBal;
@@ -24,8 +24,8 @@ document.getElementById('addmoney-btn').addEventListener('click', function(event
 document.getElementById('rmvmoney-btn').addEventListener('click', function(event){
   event.preventDefault();
   let currentBal = Number(document.getElementById('cashmoney').textContent);
-  const userPin = document.getElementById('user-pin-rmv').value;
-  const toAddMoney = Number(document.getElementById('cash-amount-rmv').value);
+  const userPin = inputValById('user-pin-rmv');
+  const toAddMoney = Number(inputValById('cash-amount-rmv'));
   if (userPin === '1474'){
     currentBal -= toAddMoney;
     document.getElementById('cashmoney').textContent = currentBal;
